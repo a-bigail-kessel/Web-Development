@@ -1,0 +1,239 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  font-family: 'Libre Bodoni', serif;
+  font-size: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Libre Bodoni', serif;
+}
+
+a{
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+#myBtn{
+  text-decoration: underline;
+}
+a:hover{
+  color:  #AABBC6;
+}
+.museum_title{
+  font-size: 30px;
+}
+
+.mobile{
+  display: none;
+}
+
+.desktop{
+  display: block;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 10%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #888;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 1%;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #modalclose {
+    color: #888;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 1%;
+  }
+  
+  #modalclose:hover,
+  #modalclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+#title{
+  margin-left: 10%;
+  margin-right:10%;
+  text-align: center;
+  font-size: 18px;
+}
+  .outside{
+    background-color: #AABBC6;
+    display: none;
+    position: fixed;
+    padding-left: 15px;
+    z-index: 1;
+    left: 20%;
+    top: 10%;
+    height: auto;
+    border-radius: 3.5%;
+  }
+
+  .side{
+    display: flex;
+  }
+
+.painting{
+    width: 350px;
+    height: auto;
+}
+
+
+#met, #bTown, #hTown, #LACMA, #cTown{
+    display: none;
+} 
+
+#HChart{
+  display: block;
+}
+
+#Chipiechart{
+  display: none;
+}
+
+.popup p{
+  text-align: center;
+}
+
+.art_explanation{
+  margin-right: 3%;
+}
+
+.right p{
+    margin-left: 5%;
+}
+
+.right h2{
+  margin-left: 5%;
+  margin-top: 0;
+}
+
+.right{
+  width: 500px;
+}
+
+@media screen and (max-width:767px){
+  .outside{
+    left: 0;
+    top: 0;
+  }
+
+  .modal-content {
+    width: 50%;
+  }
+
+
+  .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .painting{
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+.side{
+  display: flex;
+  flex-direction: column;
+}
+
+.right, .popup{
+  width: 363px;
+}
+
+#title{
+  margin: 0;
+}
+.right p, .right h2{
+  margin-left: auto;
+}
+
+
+.outside{
+  overflow: auto;
+  position: relative;
+  /* border: solid 1px red; */
+  /* height: 370px;
+  width: 800px; */
+}
+
+/* i have no idea what these do or how they work the way they do but now my modal window doesn't get cut off and you can keep scrolling */
+.full-height {
+  position: absolute;
+  top: 10;
+  left: 10;
+  /* bottom: 0; */
+  height: 100%;
+}
+
+.inner {
+  position: relative;
+  height: auto;
+}
+
+h1{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.st0{
+  height: 50px;
+  width: 50px;
+}
+
+.mobile{
+  display: block;
+}
+
+.desktop{
+  display: none;
+}
+}
