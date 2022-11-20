@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="images/latimes.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Crossing Over</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="button-image" src="images/arrow2.ico" alt="arrow"></button>
+
+    <div class="content">
+        <a href="https://www.latimes.com/"><img id="title" src="images/Los_Angeles_Times_logo.png" alt="la times big logo"></a>
+
+        <div id="header">
+             <h1>Crossing Over</h1>
+             <p>J.R. MOEHRINGER | August 12, 1999</p>
+        </div>
+        <div class="slider">
+            <a href="#box-1">1</a>
+            <a href="#box-2">2</a>
+            <a href="#box-3">3</a>
+            <a href="#box-4">4</a>
+            <a href="#box-5">5</a>
+            <a href="#box-6">6</a>
+            <a href="#box-7">7</a>
+            <a href="#box-8">8</a>
+            <a href="#box-9">9</a>
+            <a href="#box-10">10</a>
+    </div>
+    </div>
+        <script>
+            //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        mybutton.style.display = "block";
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        </script>
+ 
+      
+      <div id="gallery" class="flex">
+          <a href="c1.html">
+       <div class="thumbnail flex" id="box-1">
+           <div class="image-fill" id="image-1"></div>
+         <div class="caption">
+            <p class="links">Chapter 1</p>
+             <h2>Mary Lee's Vision</h2>
+            <p>Mary Lee, a 63-year-old Gee's Bend, Alabama, native, dicusses the the overarching history of Gee's Bend and her mixed emotions about the return of the Gee's Bend Ferry.</p>
+        </div>
+        </div>
+        </a>
+
+        <a href="c2.html">
+        <div class="thumbnail flex" id="box-2">
+            <div class="image-fill" id="image-2">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 2</p>
+              <h2>A Freedom Ride</h2>
+             <p> The Gee's Bend Ferry connects to mainland Camden, Alabama, a majority white town with deeply racist roots. After MLK visited Gee's Bend in 1965, the town of Camden shut off the ferry. </p></div>
+         </div>
+        </a>
+
+
+        <a href="#">
+         <div class="thumbnail flex" id="box-3">
+            <div class="image-fill" id="image-3">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 3</p>
+              <h2>A Change of Heart</h2>
+             <p> Mary Lee delves into her deep connection to the Alabama River. Hollis Curl, owner of Camden's sole newspaper, started the fight to bring back the ferry after an attack of remorse over his racist past. </p></div>
+         </div>
+        </a>
+
+        <a href="#">
+         <div class="thumbnail flex" id="box-4">
+            <div class="image-fill" id="image-4">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 4</p>
+              <h2>A Community of Survivors</h2>
+             <p>Mary Lee takes the hour drive into Camden to bring her mother, Aola, to the neartest doctor. Thge doctor's office is lined with famous photos of Gee's Bend, in which Mary Lee finds familiar faces.</p></div>
+         </div>
+         </a>
+
+         <a href="#">
+         <div class="thumbnail flex" id="box-5">
+            <div class="image-fill" id="image-5">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 5</p>
+              <h2>Confronting the Future</h2>
+             <p>Mary Lee became a mother in 6th grade and in total gave birth to eight children. She has thirty grandchildren, three of whom live with her and attend school in Camden.</p></div>
+         </div>
+         </a>
+
+         <a href="#">
+         <div class="thumbnail flex" id="box-6">
+            <div class="image-fill" id="image-6">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 6</p>
+              <h2>‘I Ain’t Ready to Die’</h2>
+             <p>Mary Lee attends every funeral in Gee's Bend, and there are many. In the graveyard lies her abusive husband Rubin, who apologized to Mary Lee for what he did after she left for New York City. Now, she honors his memory.</p></div>
+         </div>
+        </a>
+
+        <a href="#">
+         <div class="thumbnail flex" id="box-7">
+            <div class="image-fill" id="image-7">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 7</p>
+              <h2> Sometimes You Can’t Cross Back</h2>
+             <p>Gee's Bend was originally a slave plantation and was given to Benders to start their own farms. Today, very few people still farm, most live on Social Security checks, and few people quilt.</p></div>
+         </div>
+        </a>
+
+        <a href="#">
+         <div class="thumbnail flex" id="box-8">
+            <div class="image-fill" id="image-8">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 8</p>
+              <h2>Coming Too Late for Raymond</h2>
+             <p>Mary Lee's brother Raymond suffered a terrible stroke 20 years ago due to delayed ambulance response with no ferry. Mary Lee discusses how everyone descends from two major families. </p></div>
+         </div>
+         </a>
+
+    
+         <a href="#">
+         <div class="thumbnail flex" id="box-9">
+            <div class="image-fill" id="image-9">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 9</p>
+              <h2> No Rest for the Weary</h2>
+             <p>Mary Lee has a dream about standing at the Jordan River and being told it's not her time to cross. She reflects on how the people come together every year to celebrate Gee's Bend's oldest woman.</p></div>
+         </div>
+         </a>
+
+         <a href="#">
+         <div class="thumbnail flex" id="box-10">
+            <div class="image-fill" id="image-10">
+            </div>
+          <div class="caption">
+             <p class="links">Chapter 10</p>
+              <h2> A New Journey Begins</h2>
+             <p>Mary Lee reflects on how death changes as the Bender community thins out. Right under her nose, the ferry is about to become a reality, whether she fears it or welcomes it.</p></div>
+         </div>
+      </div>
+    </a>
+<!--           
+                    <a class="links" href="c2.html">Chapter 2</a>
+                    <a href="c2.html"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>
+              </div>
+              <div id="slide-3">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 3</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>              
+            </div>
+              <div id="slide-4">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 4</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>   
+            </div>
+              <div id="slide-5">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 5</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>   
+              </div>
+              <div id="slide-6">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 6</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>   
+              </div>
+              <div id="slide-7">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 7</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>   
+              </div>
+              <div id="slide-8">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 8</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>   
+              </div>
+              <div id="slide-9">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 9</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>   
+              </div>
+              <div id="slide-10">
+                <div class="wrapper"> 
+                    <a class="links" href="#">Chapter 10</a>
+                    <a href="#"><img class="images" src="images/gees-older-ferry.jpeg"></a>
+                </div>   
+              </div>
+            </div>
+          </div>
+    </div> --> 
+    <!-- <div id="title-box">
+        <a href="https://www.latimes.com/"><img id="title" src="images/Los_Angeles_Times_logo.png" alt="la times big logo"></a>
+    </div> -->
+    
+   
+
+    
+   
+</body>
+</html>
+
+ <!-- <div class="topnav" id="myTopnav">
+        <div class="menu-item"><a href="index.html">C 1</a></div>
+        <div class="menu-item"><a href="c2.html">C 2</a></div>
+        <div class="menu-item"><a href="#">C 3</a></div>
+        <div class="menu-item"><a href="#">C 4</a></div>
+        <div class="menu-item"><a href="#">C 5</a></div>
+        <div class="menu-item"><a href="#">C 6</a></div>
+        <div class="menu-item"><a href="#">C 7</a></div>
+        <div class="menu-item"><a href="#">C 8</a></div>
+        <div class="menu-item"><a href="#">C 9</a></div>
+        <div class="menu-item"><a href="#">C 10</a></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        </script>  -->
+
+
+        <!-- 
+
+    <div class ="navbar">
+        <div class="logo">LOGO</div>
+        <div class="desktop-menu">
+            <div class="menu-item"><a  href="index.html">C 1</a></div>
+            <div class="menu-item"><a href="c2.html">C 2</a></div>
+            <div class="menu-item"><a href="#">C 3</a></div>
+            <div class="menu-item"><a href="#">C 4</a></div>
+            <div class="menu-item"><a href="#">C 5</a></div>
+            <div class="menu-item"><a href="#">C 6</a></div>
+            <div class="menu-item"><a href="#">C 7</a></div>
+            <div class="menu-item"><a href="#">C 8</a></div>
+            <div class="menu-item"><a href="#">C 9</a></div>
+            <div class="menu-item"><a href="#">C 10</a></div>
+        </div>
+        <div id="burger">X</div>
+    </div> 
+        <div class="offscreen-nav">
+            <div class="dropdown-content">
+                <div class="menu-item"><a  href="index.html">C 1</a></div>
+                <div class="menu-item"><a href="c2.html">C 2</a></div>
+                <div class="menu-item"><a href="#">C 3</a></div>
+                <div class="menu-item"><a href="#">C 4</a></div>
+                <div class="menu-item"><a href="#">C 5</a></div>
+                <div class="menu-item"><a href="#">C 5</a></div>
+                <div class="menu-item"><a href="#">C 6</a></div>
+                <div class="menu-item"><a href="#">C 7</a></div>
+                <div class="menu-item"><a href="#">C 8</a></div>
+                <div class="menu-item"><a href="#">C 9</a></div>
+                <div class="menu-item"><a href="#">C 10</a></div>
+                <h2 id="close-btn">X</h2>
+            </div>
+        </div>
+  
+
+    <script> 
+        var burger = document.getElementById('burger');
+        var offscreenNav = document.getElementById('offscreen-nav');
+        var closeBtn = document.getElementById('close-btn');
+
+        burger.addEventListener('click', openNav);
+        closeBtn.addEventListener('click', closeNav);
+
+        function openNav(){
+        offscreenNav.style.width = '100%';
+        offscreenNav.style.transition = '0.2s linear';
+        }
+        function closeNav(){
+        offscreenNav.style.width = '0%';
+        offscreenNav.style.transition = '0.2s linear';
+        }
+    </script> -->
+  

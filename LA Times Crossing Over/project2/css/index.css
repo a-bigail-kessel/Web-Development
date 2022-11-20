@@ -1,0 +1,266 @@
+/* GLOBALS */
+body{
+    background-color: #f7f9fc;
+    font-family:"times new roman",times,serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+  h1{
+    font-size: 80px;
+    font-family:"times new roman",times,serif;
+    font-style: normal;
+    font-weight: 400;
+    padding:0;
+    margin-top: 0px; 
+    margin-bottom: 0;
+    text-align: center;
+  }
+ 
+  h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 8px;
+    font-size: 32px;
+    font-family:"times new roman",times,serif;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  a{
+    font-family:"times new roman",times,serif;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+  }
+
+  a:hover{
+    filter: opacity(70%);
+  }
+
+
+
+/* HEADER // at the top */
+#header > p{
+    margin-top: 1px;
+    padding-top: 0;
+} 
+
+#header{
+    margin-bottom: 15px;
+}
+
+#title{
+    margin: auto;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+} 
+
+.content{
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    align-items: center;
+  justify-content: center; 
+} 
+
+
+
+/*SLIDER -- I tried doing a carousel and that went so bad but i did keep the sliders https://css-tricks.com/css-only-carousel/ */
+.slider > a {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    box-shadow: inset 0 0 0 1px;
+  }
+ 
+  .slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .slider > a:hover{
+      color: #CB997E;
+  }
+
+
+/* TILES */
+  #image-1{
+    background-image: url(../images/geesferry2.jpeg);
+  }
+
+  #image-2{
+    background-image: url(../images/gees-older-ferry.jpeg);
+  }
+
+  #image-3{
+      background-image: url(../images/bigdaddy.jpeg);
+  }
+
+  #image-4{
+      background-image: url(../images/gees-girl.jpeg);
+  }
+
+  #image-5{
+      background-image: url(../images/gees-family.jpeg);
+  }
+
+  #image-6{
+      background-image: url(../images/graveyard.jpeg);
+  }
+
+  #image-7{
+      background-image: url(../images/quilt.jpeg);
+  }
+
+  #image-8{
+      background-image: url(../images/road.jpeg);
+  }
+
+  #image-9{
+    background-image: url(../images/martha.jpeg);
+  }
+
+  #image-10{
+      background-image: url(../images/ferrymob.jpg);
+  }
+
+  .image-fill{
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/geesferry2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .caption{
+      width: 300px;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 6px 6px -3px #00000029;
+      z-index: 3;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+      padding-top: 0px;
+  }
+
+  .caption > p{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .flex{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+  }
+  
+  #gallery{
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  .thumbnail{
+    margin:10px;
+    flex-direction:column;
+    padding:5px;
+  }
+
+  .links{
+    margin-bottom: 3;
+  } 
+
+    .images{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    }
+
+
+/* TOP BUTTON  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top*/
+  #myBtn {
+    /* display: none; Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #DDBEA9; /*Set a background color */
+    /*color: white;  Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+   /*  padding: 15px; Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #CB997E; /* Add a dark-grey background on hover */
+  }
+
+  #button-image{
+      width: 60px;
+      height: auto;
+  }
+
+  @media screen and (min-width:767px){
+
+    .slider {
+        width: 600px
+    }
+
+    .slides > div{
+        width: 500px;
+        height: 500px;
+    }
+
+    .images{
+        width: 300px;
+        height: 300px;
+    }
+
+    #gallery{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+  
+
+  
